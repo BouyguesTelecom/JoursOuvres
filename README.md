@@ -1,17 +1,17 @@
 # Java - Jours Ouvrés français
 
-Cette librairie permet de calcul les jours ouvrés et d'obtenir les jours fériés français.
+Cette librairie permet de calculer les jours ouvrés et d'obtenir les jours fériés français.
 
 
 ## Exigences
-Nécéssite au moins Java 8 à cause de l'utilisation de `java.time.LocalDate`.
+Nécessite au moins Java 8 à cause de l'utilisation de `java.time.LocalDate`.
 
 ## Fonctionnalités
 
 La classe `JoursOuvresFrance` met à disposition plusieurs méthodes pour obtenir les dates de jours fériés et faire certains calcul de dates.
 
 ### Obtenir les jours fériés
-On peut obtenir les date de jours fériés d'une année avec la méthode suivante : 
+On peut obtenir les dates de jours fériés d'une année avec la méthode suivante : 
     `List<LocalDate> joursFeries(int annee)`
 
 On peut aussi obtenir un jour férié spécifique avec une autre méthode comme celle-ci : 
@@ -36,7 +36,7 @@ il est possible de préciser si l'on inclu ou non la date de début dans l'inter
 ## Utilisation
 
 ```java
-import com.bouygtel.joursouvres.JoursOuvresFrance;
+import fr.bouyguestelecom.joursouvres.JoursOuvresFrance;
 
 import java.time.LocalDate;
 

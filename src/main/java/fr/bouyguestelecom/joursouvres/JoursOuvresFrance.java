@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author ploze
+ * @author Paullz
  *
  */
 public class JoursOuvresFrance {
