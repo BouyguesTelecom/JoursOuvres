@@ -1,0 +1,23 @@
+language: java
+cache:
+  directories:
+    - "$HOME/.m2"
+addons:
+  sonarcloud:
+    organization: bouyguestelecom
+    token:
+      secure: Eg1c0vnybY2O/j60vV/obcQB6pagpnHA8uMdHQ3d7Vi7eWQ+T0OJLAVYqSX68VUAwlfGJozINmkmCsRKgvfad97ryWvJXJ0CC+4vNQqG3tTSjnkUMokE0oX+F3dSkOlOeB7tTnnFKJFle1LDf2AZxjNlpB3nWWsaElUhrxvtoSs3acwXVWp3ZebO+fKd2KlE3AGymMV/8XWXRC4pqPotyjpIjB5QgY2/K7frEEbUPdbBYE1liPVaH7d0SQiEwtY4z8e/UijQAsXYQzjDnZYfCrYq9Ff4cwOikjZhMhuG1B53QsQSHiue9tdpdtrmIIN42T3p4Rs6d7fn3zc3uuD0WH4KxL8JNKjWyULO7haImhlibAU2/TiWh8T4rSaepSy/2i1AAb8gdnw8/Y7FDgDVIgyIlq/tsIp/Cdd7Jtk1BpqRAL1V9LmDr8cgGkIsErKIIi6bhRLVysHrb8Gw9nuTD1VIRTeTeKdW38EMp8tqbtMGyUUzm+d7x9O62MQbjVMeMAQWSia04poF+Wa37TdkfosbAU+jCAoXlps34Hst+9eSuMWmllyBc+3FU9vEaZBIyFMkjn+/74Z4We6xnS8lCOShdY3dgDj+IA+O8EHvPMOXrDYQW9jSuDQEq2PaL2w0Jdf5OeJ17Az3wHM/9DAr2TeVkbbj1HFXGNaTaZ11u60=
+
+stages:
+  - test
+
+jobs:
+  include:
+    - stage: test
+      script: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar \
+        --define sonar.projectKey=BouyguesTelecom_JoursOuvres \
+        --define maven.test.skip=true \
+        --define sonar.java.source=8 \
+        --define sonar.java.binaries=target/joursouvres-*.jar
+    - stage: test
+      script: mvn clean test
