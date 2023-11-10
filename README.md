@@ -1,9 +1,9 @@
 # Java - Jours Ouvrés français
 
 [![Build Status](https://travis-ci.org/BouyguesTelecom/JoursOuvres.svg?branch=master)](https://travis-ci.org/BouyguesTelecom/JoursOuvres)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.bouygtel%3Ajoursouvres&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.bouygtel%3Ajoursouvres)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.bouygtel%3Ajoursouvres&metric=coverage)](https://sonarcloud.io/dashboard?id=com.bouygtel%3Ajoursouvres)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=com.bouygtel%3Ajoursouvres&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=com.bouygtel%3Ajoursouvres)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fr.bouyguestelecom%3Ajoursouvres&metric=alert_status)](https://sonarcloud.io/dashboard?id=fr.bouyguestelecom%3Ajoursouvres)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=fr.bouyguestelecom%3Ajoursouvres&metric=coverage)](https://sonarcloud.io/dashboard?id=fr.bouyguestelecom%3Ajoursouvres)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=fr.bouyguestelecom%3Ajoursouvres&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=fr.bouyguestelecom%3Ajoursouvres)
 
 Cette librairie permet de calculer les jours ouvrés et d'obtenir les jours fériés français.
 
